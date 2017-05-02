@@ -86,6 +86,43 @@ echo '<body>';
 	echo '<pre>';
 	print_r($carreras_estudiantes);
 	echo '</pre>';
+
+
+	$carreras_estudiantes_materias = [
+        'ASI' => [
+            'e1' => [
+                'm1' => [
+                    'b1' => 9.8,
+                    'b2' => 7.5
+                ],
+                'm2' => [9.8, 7.5],
+            ],
+            'e2' => ['m1', 'm2'],
+            'e3' => ['m1', 'm2'],
+            ],
+        'ASA' => [
+            'e4' => ['m1', 'm2'],
+            'e5' => ['m1', 'm2'],
+            'e6' => ['m1', 'm2'],
+            'e7' => ['m1', 'm2'],
+            ],
+        'EM' => [
+            'e8' => ['m1', 'm2'],
+            'e9' => ['m1', 'm2'],
+            'e10' => ['m1', 'm2'],
+            'e11' => ['m1', 'm2'],
+            'e12' => ['m1', 'm2'],
+        ],
+        'ET' => [
+            'e13' => ['m1', 'm2'],
+            'e14' => ['m1', 'm2'],
+            'e15' => ['m1', 'm2']
+        ]
+    ];
+
+	echo '<pre>';
+	print_r($carreras_estudiantes_materias);
+	echo '</pre>';
 	?>
 </div>
 </body>
